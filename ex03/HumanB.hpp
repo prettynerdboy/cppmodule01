@@ -6,7 +6,7 @@
 /*   By: anakin <anakin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 10:21:15 by anakin            #+#    #+#             */
-/*   Updated: 2025/03/07 10:58:39 by anakin           ###   ########.fr       */
+/*   Updated: 2025/03/15 14:34:44 by anakin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ private:
     Weapon *weapon;
 public:
     HumanB(std::string newName):name(newName),weapon(NULL){}
+    ~HumanB();
     void attack();
     void setWeapon(Weapon &weapon);
 };
